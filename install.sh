@@ -137,7 +137,7 @@ install_XrayR() {
     chmod +x XrayR
     mkdir /etc/XrayR/ -p
     rm /etc/systemd/system/XrayR.service -f
-    file="https://github.com/RandomNessan/xrayr_install_oneclick/tree/main/XrayR.service"
+    file="https://raw.githubusercontent.com/RandomNessan/xrayr_install_oneclick/main/XrayR.service"
     wget -q -N --no-check-certificate -O /etc/systemd/system/XrayR.service ${file}
     systemctl daemon-reload
     systemctl stop XrayR
